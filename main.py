@@ -101,6 +101,6 @@ if __name__ == '__main__':
         plot_incorrect_predictions(incorrect, class_map, args.img_count)
     
     if args.show_gradcam:
-        show_gradcam(model, test_loader, class_map, cuda, args.img_count)
+        show_gradcam(model, test_loader, class_map, cuda, means, stds, args.img_count)
 
     
