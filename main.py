@@ -30,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument('--img_count', default=10, type=int, help='Count of images to show')
     parser.add_argument('--show_misclassified', action='store_true', help='Show misclassified images')
     parser.add_argument('--show_gradcam', action='store_true', help='Show gradcam of images')
-    parser.add_argument('--print_summary', action='store_true', help='Print model summary')
+    parser.add_argument('--print_summary', action='store_false', help='Print model summary')
     parser.add_argument('--model', default="resnet18", type=str, help='Which model to use for training')
     parser.add_argument('--optimizer', default="adam", type=str, help='Which optimizer to use for training')
     parser.add_argument('--epochs', default=20, type=int, help='Number of epochs for training')
