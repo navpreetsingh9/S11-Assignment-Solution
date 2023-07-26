@@ -18,7 +18,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.01, type=float, help='Learning Rate')
     parser.add_argument('--momentum', default=0.9, type=float, help='Momentum')
-    parser.add_argument('--weight_decay', default=1e-4, type=float, help='Weight decay factor')
+    parser.add_argument('--weight_decay', default=5e-4, type=float, help='Weight decay factor')
     parser.add_argument('--use_scheduler', action='store_true', help='Use scheduler')
     parser.add_argument('--end_lr', default=10, type=float, help='end_lr for one cycle policy')
     parser.add_argument('--seed', default=1, type=int, help='Seed')
