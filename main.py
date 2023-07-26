@@ -69,7 +69,7 @@ if __name__ == '__main__':
     else: #default
         model = ResNet34().to(device) 
 
-    if 1:#args.print_summary:
+    if args.print_summary:
         print_summary(model, (1, 3, 36, 36))
 
     print('==> Initializing optimizer and scheduler..')
